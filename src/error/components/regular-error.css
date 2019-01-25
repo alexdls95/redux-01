@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: darkblue;
+  flex-direction: column;
+}
+
+.main-text {
+  color: darkgrey;
+  margin: 0;
+}
+
+h1 {
+  text-transform: uppercase;
+}
