@@ -6,28 +6,35 @@
     vertical-align: top;
 }
 
-.Media:hover .Media-cover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+.Media-cover {
+    transition: 0.5s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2px 2px 3px 3px;
+    padding-bottom: 8px;
 }
 
-.Media-cover {
-    transition: .3s;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+.Media:hover .Media-cover {
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.4);
 }
 
 .Media-image {
     object-fit: cover;
+    border-radius: 3px 3px 0 0;
+}
+
+.Media-title, .Media-author {
+    margin: 5px 15px;
 }
 
 .Media-title {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 10px 10px;
     color: #44546b;
     white-space: normal;
 }
 
 .Media-author {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    margin: 10px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #727272;
 }
