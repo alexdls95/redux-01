@@ -1,10 +1,17 @@
 import React from 'react'
 import './search.css'
 
-const Search = () => (
+const Search = (props) => (
   <div style={{textAlign: 'center'}}>
-    <form action="" className="Search">
-      <input type="text" className="Search-input" placeholder="Buscar artículos..."/>
+    <form className="Search" onSubmit={props.handleSubmit}>
+      <input
+      type="text"
+      className="Search-input"
+      placeholder="Buscar artículos..."
+      ref={props.setRef}
+      onChange={props.handleChange}
+      value={props.value}
+      />
     </form>
   </div>
 )
