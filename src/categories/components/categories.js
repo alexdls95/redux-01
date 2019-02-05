@@ -6,8 +6,8 @@ import Media from '../../playlist/components/media'
 
 function Categories(props) {
   return (
-    <Search />
     <div className="Categories">
+      <Search />
       {
         props.search.map((item) => {
           return <Media key={item.id} {...item} />
