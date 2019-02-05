@@ -8,7 +8,8 @@ import reducer from '../reducers/data'
 
 // descomponemos la data en un nuevo objeto de un único atributo también llamado data.
 const initialState = {
-  data: {...data}
+  data: {...data },
+  search: []
 }
 
 const store = createStore (
