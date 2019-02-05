@@ -17,11 +17,12 @@ module.exports = (env) => {
   return {
 
     entry: {
-      home: path.resolve(__dirname, 'src/entries/home.js'),
+      "home": path.resolve(__dirname, 'src/entries/home.js'),
+      "redux": path.resolve(__dirname, 'src/entries/redux.js'),
     },
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'js/[name].js',
+      filename: 'js/[name].[hash].js',
       publicPath: path.resolve(__dirname, 'dist')+"/",
       chunkFilename: 'js/[id].[chunkhash].js',
     },
