@@ -1,13 +1,13 @@
 import React from 'react'
-import Media from './media'
+import MediaContainer from '../containers/media'
 import './playlist.css'
 
 function Playlist (props) {
     return (
         <div className="Playlist">
             {
-                props.playlist.map((item)=> {
-                    return <Media key={item.id} {...item} openModal={props.handleOpenModal}/>
+                props.playlist.map((mediaId)=> {
+                    return <MediaContainer key={mediaId} id={mediaId} openModal={props.handleOpenModal}/>
                 })
             }
         </div>
