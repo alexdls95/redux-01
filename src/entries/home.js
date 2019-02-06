@@ -1,18 +1,20 @@
 import React from 'react'
 import { render } from 'react-dom'
 import Home from '../pages/containers/home'
-import data from '../../src/api.json'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import reducer from '../reducers/data'
-import normalizedData from '../schemas/index'
+import data from '../schemas/index'
 
-console.log(normalizedData)
+console.log(data)
 
 
 // descomponemos la data en un nuevo objeto de un único atributo también llamado data.
 const initialState = {
-  data: {...data },
+  data: {
+    entities: data.entities,
+    categories: data.result.categories,
+  },
   search: []
 }
 
